@@ -13,7 +13,7 @@ const renderPokemons = () => {
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <h1>Mi lista de pokemon</h1>
       {renderPokemons()}
       {/* <Pokemon id={pokemons.id} name={pokemons.name} types={pokemons.types} url={pokemons.url} evolution={pokemons.evolution} /> */}
