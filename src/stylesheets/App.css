@@ -8,6 +8,8 @@
   display: inline-block;
   width: 200px;
   height: 250px;
+  border-radius: 5px;
+  background-color: rgb(196, 237, 238);
 }
 .pokemon__list--style {
   list-style: none;
