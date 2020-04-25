@@ -5,10 +5,9 @@ import PokeList from './PokeList';
 
 function App() {
   const [pokemons] = useState(pokemonsData);
-  console.log(pokemons);
   return (
     <div className="">
-      <h1>Mi lista de pokemon</h1>
+      <h1 className="pokemon__header">Mi lista de pokemon</h1>
       <PokeList pokemons={pokemons} />
     </div>
   );

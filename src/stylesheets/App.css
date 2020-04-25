@@ -14,3 +14,21 @@
 .pokemon__list--style {
   list-style: none;
 }
+.pokemon__header {
+  margin-top: 20px;
+  text-align: center;
+}
+.wrapper {
+  display: grid;
+  grid-row-gap: 1ch;
+  grid-template: repeat(5, 300px) / repeat(4, 250px);
+  grid-auto-flow: row;
+}
+.section__grid {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 40px;
+}

@@ -2,11 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Pokemon(props) {
-  console.log(props);
-
   const renderTypes = () => {
     return props.types.map((type, index) => {
-      console.log(index);
       return <li key={index}>{type}</li>;
     });
   };
