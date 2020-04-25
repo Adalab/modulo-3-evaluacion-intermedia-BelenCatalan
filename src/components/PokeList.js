@@ -1,14 +1,19 @@
 import React from 'react';
 import Pokemon from './Pokemon';
+import PropTypes from 'prop-types';
 
 function PokeList(props) {
   console.log(props);
-
-  return (
-    <>
-      <Pokemon key={props.id} id={props.id} name={props.name} types={props.types} url={props.url} evolution={props.evolution} />
-    </>
-  );
+  const renderPokemons = () => {
+    return props.pokemons.map((pokemon) => {
+      return <Pokemon key={pokemon.id} id={pokemon.id} name={pokemon.name} types={pokemon.types} url={pokemon.url} evolution={pokemon.evolution} />;
+    });
+  };
+  return <div>{renderPokemons()}</div>;
 }
+
+PokeList.propTypes = {
+  characters: PropTypes.arrayOf(PropTypes.object),
+};
 
 export default PokeList;
